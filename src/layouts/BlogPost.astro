@@ -4,6 +4,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
+import GTMBody from '../components/GTMBody.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
@@ -16,6 +17,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 	</head>
 
 	<body>
+		<GTMBody />
 		<Header />
 		<main class="flex flex-wrap">
 			<article class="blog w-full md:w-[calc(75%-4rem)] md:m-12">
