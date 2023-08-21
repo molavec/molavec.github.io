@@ -16,7 +16,7 @@ const posts = (await getCollection('blog')).sort(
           index == 0 ? '' : 'md:w-[calc(50%-1rem)]',
         ]}
       >
-        <div class="p-4 border-l-4 rounded-sm border-calipso">
+        <div class="p-2 border-l-4 rounded-sm border-calipso">
           <a href={`/blog/${post.slug}/`}>
             {/* <img width={720} height={360} src={post.data.heroImage} alt="" /> */} 
             <h4 class:list={[

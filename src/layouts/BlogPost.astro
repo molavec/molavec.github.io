@@ -13,27 +13,12 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 <html lang="es">
 	<head>
 		<BaseHead title={title} description={description} />
-		<style>
-			.blog h1 {
-				font-size: 3rem;
-				margin-bottom: 20px;
-			}
-	
-			.blog h2 {
-				font-size: 2rem;
-				margin-top: 60px;
-				margin-bottom: 20px;
-			}
-	
-		</style>
 	</head>
-
-	
 
 	<body>
 		<Header />
-		<main>
-			<article class="blog max-w-4xl m-12">
+		<main class="flex flex-wrap">
+			<article class="blog w-full md:w-[calc(75%-4rem)] md:m-12">
 				<!-- 
 					<div class="hero-image">
 						{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
@@ -58,6 +43,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				<slot />
 
 			</article>
+			<div class="collapse md:visible md:w-[calc(25%-4rem)] border-4 border-black p-4">
+				<p>Hola mundo</p>
+			</div>
 		</main>
 		<Footer />
 	</body>

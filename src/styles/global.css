@@ -8,6 +8,7 @@
 	--saffron: #f5cb5c;
 	--saffron-dark: #efdaa1;
 	--jet: 15, 18, 25;
+	--calipso: "#60739f";
 	--gray: 96, 115, 159;
 	--gray-light: 229, 233, 240;
 	--gray-dark: 34, 41, 57;
@@ -191,17 +192,8 @@ pre > code {
 	all: unset;
 }
 
-blockquote {
-	border-left: 4px solid var(--saffron);
-	padding: 0 0 0 20px;
-	margin: 0px;
-	font-size: 1.333em;
-}
 
-hr {
-	border: none;
-	border-top: 1px solid rgb(var(--gray-light));
-}
+
 
 @media (max-width: 720px) {
 	body {
@@ -219,10 +211,25 @@ article h1 {
 
 article h2 {
 	font-size: 2rem;
-	margin-top: 60px;
-	margin-bottom: 20px;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 article p {
-	margin-bottom: 2em;
+	margin-top: 0em;
+	margin-bottom: 1.5em;
+}
+
+article hr {
+	border: solid;
+	border-top: 2px solid var(--calipso);
+	margin-bottom: 3dvh;
+}
+
+
+article blockquote {
+	border-left: 4px solid var(--saffron);
+	padding: 0 0 0 20px;
+	margin: 0px;
+	font-size: 1.333em;
 }
