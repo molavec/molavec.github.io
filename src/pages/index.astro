@@ -1,6 +1,6 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
+// import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import PostList from '../components/PostList.astro';
 
@@ -19,11 +19,17 @@ import GTMBody from '../components/GTMBody.astro';
 		<main class="p-8 flex justify-center w-full min-h-[75vh]">
 			<section class="max-w-4xl mt-12">
 
-				<div>
-					<h1 class="text-5xl font-bold mb-4">Hi 👋, I'm Miguel Olave</h1>
-					<h3 class="text-2xl">
-						A passionate Javascript Fullstack developer <br/> & UX-PM from Chile</b>.
-					</h3>
+				<!-- init -->
+				<div class="flex flex-wrap justify-center align-center">
+					<div class="my-4">
+						<img src="/avatar.png" alt="Miguel's avatar image" class="max-h-40 rounded-full">
+					</div>
+					<div class="my-4 pl-4">
+						<h1 class="text-5xl font-bold mb-4">Hi 👋, <br/>I'm Miguel Olave</h1>
+						<h3 class="text-2xl">
+							A passionate Javascript Fullstack developer <br/> & UX-PM from Chile</b>.
+						</h3>
+					</div>
 				</div>
 				
 				<!-- <PostList/> -->
